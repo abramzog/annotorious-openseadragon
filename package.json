@@ -1,5 +1,5 @@
 {
-  "name": "@recogito/annotorious-openseadragon",
+  "name": "@abramzog/annotorious-openseadragon",
   "version": "2.7.12",
   "description": "Annotorious image annotation for OpenSeadragon",
   "main": "dist/openseadragon-annotorious.min.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/recogito/annotorious-openseadragon.git"
+    "url": "git+https://github.com/abramzog/annotorious-openseadragon.git"
   },
   "keywords": [
     "Annotation",
@@ -21,7 +21,7 @@
   "author": "Rainer Simon",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/recogito/annotorious-openseadragon/issues"
+    "url": "https://github.com/abramzog/annotorious-openseadragon/issues"
   },
   "homepage": "https://recogito.github.io/annotorious",
   "funding": {
