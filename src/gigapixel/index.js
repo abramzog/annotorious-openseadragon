@@ -1,10 +1,10 @@
-import { WebAnnotation } from '@recogito/recogito-client-core';
-import { SVG_NAMESPACE } from '@recogito/annotorious/src/util/SVG';
+import { WebAnnotation } from '@abramzog/recogito-client-core';
+import { SVG_NAMESPACE } from '@abramzog/annotorious/src/util/SVG';
 import { 
   parseRectFragment,
   svgFragmentToShape,
   toRectFragment, 
-} from '@recogito/annotorious/src/selectors';
+} from '@abramzog/annotorious/src/selectors';
 
 const currentTransform = viewer => {
   const extent = viewer.viewport.viewportToImageRectangle(viewer.viewport.getBounds(true));

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Editor } from '@recogito/recogito-client-core';
+import { Editor } from '@abramzog/recogito-client-core';
 import OSDAnnotationLayer from './OSDAnnotationLayer';
 import GigapixelAnnotationLayer from './gigapixel/GigapixelAnnotationLayer';
 

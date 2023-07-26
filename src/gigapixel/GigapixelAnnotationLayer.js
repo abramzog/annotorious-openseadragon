@@ -1,8 +1,8 @@
 import OpenSeadragon from 'openseadragon';
-import { drawShape } from '@recogito/annotorious/src/selectors';
-import { format } from '@recogito/annotorious/src/util/Formatting';
-import { addClass, removeClass } from '@recogito/annotorious/src/util/SVG';
-import { isTouchDevice } from '@recogito/annotorious/src/util/Touch';
+import { drawShape } from '@abramzog/annotorious/src/selectors';
+import { format } from '@abramzog/annotorious/src/util/Formatting';
+import { addClass, removeClass } from '@abramzog/annotorious/src/util/SVG';
+import { isTouchDevice } from '@abramzog/annotorious/src/util/Touch';
 import { viewportTargetToImage, imageAnnotationToViewport, refreshViewportPosition } from '.';
 import { AnnotationLayer } from '../OSDAnnotationLayer';
 
