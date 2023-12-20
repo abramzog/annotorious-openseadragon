@@ -234,17 +234,29 @@ export class AnnotationLayer extends EventEmitter {
       document.removeEventListener('keydown', this.onKeyDown);
 
     this.onKeyDown = evt => {
-      if (evt?.key.toLowerCase() === hotkey && !this.selectedShape) {
-        const enabled = !this.readOnly && !inverted;
-        this.mouseTracker.enabled = enabled;
-        this.tools.current.enabled = enabled;
+      try{
+        console.debug('OSDAnnotationLayer this.onKeyDown = evt', evt);
+        if (evt?.key?.toLowerCase() === hotkey && !this.selectedShape) {
+          const enabled = !this.readOnly && !inverted;
+          this.mouseTracker.enabled = enabled;
+          this.tools.current.enabled = enabled;
+        }
+      }
+      catch(e) {
+        console.error('OSDAnnotationLayer', e);
       }
     };
 
     this.onKeyUp = evt => {
-      if (evt?.key.toLowerCase() === hotkey && !this.tools.current.isDrawing) {
-        this.mouseTracker.enabled = inverted;
-        this.tools.current.enabled = inverted;
+      try{
+        console.debug('OSDAnnotationLayer this.onKeyUp = evt', evt)
+        if (evt?.key?.toLowerCase() === hotkey && !this.tools.current.isDrawing) {
+          this.mouseTracker.enabled = inverted;
+          this.tools.current.enabled = inverted;
+        }
+      }
+      catch(e) {
+        console.error('OSDAnnotationLayer', e);
       }
     };
         
